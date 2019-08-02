@@ -1,0 +1,7 @@
+os:
+  - osx
+  - linux
+install:
+  - yarn
+script:
+  - yarn dist
