@@ -1,0 +1,15 @@
+language: node_js
+node_js: '10.15.1'
+os:
+  - osx
+install:
+  - yarn
+script:
+  - yarn dist
+cache:
+  directories:
+    - node_modules
+    - app/node_modules
+    - $HOME/.cache/electron
+    - $HOME/.cache/electron-builder
+    - $HOME/.npm/_prebuilds
